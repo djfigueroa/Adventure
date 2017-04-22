@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>My Mad Lib</title>
+    <meta charset="utf-8"></meta>
+  </head>
+  <body>
+    <script>
+
+
+      function go() {
+        document.getElementById("name")
+        var Nameinput = document.getElementById("name")
+
+
+        document.getElementById("verb")
+        var Verbinput = document.getElementById("verb")
+
+
+        document.getElementById("adj")
+        var Adjinput = document.getElementById("adj")
+
+
+        document.getElementById("food")
+        var Foodinput = document.getElementById("food")
+
+        document.getElementById("verb2")
+        var Verb2input = document.getElementById("verb2")
+
+        document.getElementById("name2")
+        var Name2input = document.getElementById("name2")
+
+
+        alert(Nameinput.value + (" has ") + Verbinput.value + (" ") + Adjinput.value + (" ") + Foodinput.value + (" that ") + Verb2input.value + (" around the room like crazy people. ") + (" I fly away on a ") + Name2input.value + (" to avoid them, becuase they scare me. "))
+    }
+
+
+
+    </script>
+<button onclick="go()">CLICK ME WHEN DONE</button><br>
+
+<label for="name">Name</label>
+    <input id="name"></input><br>
+
+    <label for="verb">Verb(add "ing")</label>
+    <input id="verb"></input><br>
+
+    <label for="adj">Adj</label>
+    <input id="adj"></input><br>
+
+    <label for="food">Food</label>
+    <input id="food"></input><br>
+
+    <label for="verb2">Verb2</label>
+    <input id="verb2"></input><br>
+
+    <label for="name2">Name2/Animal</label>
+    <input id="name2"></input><br>
+
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Helvetica;
+        text-align: center;
+      }
+      #card {
+        width: 500px;
+        padding: 120px 0;
+        margin: 50px auto;
+        border: 5px solid red;
+        border-radius: 5px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="card">
+    </div>
+    <input type="text" id="userInput" autofocus></input>
+    <button onclick="answer();">Answer</button>
+
+    <script>
+      var i = 0
+    var q = [
+      "Is Peppa Pig Life?",
+      "How many fingers do I have?",
+      "What is the answer to life?",
+      "What is better, Terraria, or Minecraft?",
+      "Is Roblox fun?"
+    ];
+
+    var a = [
+      "YES",
+      "8",
+      "42",
+      "Terraria",
+      "Yes"
+    ]
+    var ui = document.getElementById("userInput");
+    function answer() {
+      if (ui.value === a[i] ) {
+        alert("You got it!")
+        next()
+      } else {
+        alert("Try Again")
+      }
+    }
+
+    function next(){
+      i++
+  card.textContent = q[i]
+
+
+    }
+
+    var card = document.getElementById("card");
+    card.textContent = q[i]
+
+
+    </script>
+
+  </body>
+</html>
